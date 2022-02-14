@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include("../partials/head.ejs") %>
+
+<body class="container">
+	<%- include("../partials/header.ejs") %>
+
+	<main>
+		<div class="bg-secondary text-center text-white">
+			<h1>Sobre mim</h1>
+			<p>Eu sou Brian Matheus e sou muito bonito</p>
+
+			<hr>
+		
+			<ul class="text-start">
+				<% acronimo.forEach(function(linha) { %>
+					<li class="fs-5">
+						<b><%= linha.letter %></b><span><%= linha.text %></span>
+					</li>
+				<% }) %>
+			</ul>
+		</div>
+	</main>
+
+	<%- include("../partials/footer.ejs") %>
+</body>
+</html>
