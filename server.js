@@ -2,7 +2,7 @@
 
 const express = require("express")
 const app = express()
-// Definir ormato padrão dos arquivos. Exige estar na pasta 'views' para .ejs
+// Definir formato padrão dos arquivos. Exige estar na pasta 'views' para .ejs
 app.set("view engine", "ejs")
 
 /* Rotas */
